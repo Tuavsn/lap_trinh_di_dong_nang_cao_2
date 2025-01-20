@@ -14,7 +14,7 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
-target 'bai_tap_2' do
+target 'eventHub' do
   config = use_native_modules!
 
   use_react_native!(
@@ -23,7 +23,7 @@ target 'bai_tap_2' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'bai_tap_2Tests' do
+  target 'eventHubTests' do
     inherit! :complete
     # Pods for testing
   end
